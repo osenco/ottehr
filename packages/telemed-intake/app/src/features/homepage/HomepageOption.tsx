@@ -36,7 +36,7 @@ const HomepageOption: FC<HomepageOptionsProps> = ({ title, icon, handleClick }) 
         sx={{
           display: 'flex',
           alignItems: 'center',
-          backgroundColor: otherColors.purple,
+          backgroundColor: otherColors.appointmentInfoBackground,
           color: 'white',
           borderRadius: '50%',
           p: 1,

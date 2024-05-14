@@ -36,7 +36,7 @@ export const convertStatesAbbreviationsToLocationIds = async (
       },
     ],
   };
-  const resources = await fhirClient.searchResources(searchParams);
+  const resources: Location[] = await fhirClient.searchResources(searchParams);
   resources.forEach((resource) => {
     if (resource && resource.resourceType === 'Location') {
       const location = resource as Location;

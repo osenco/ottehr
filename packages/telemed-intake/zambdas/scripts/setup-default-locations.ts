@@ -3,7 +3,7 @@ import { Location, Resource } from 'fhir/r4';
 import { AllStates } from 'ottehr-utils';
 
 export const checkTelemedVirtualLocations = async (fhirClient: FhirClient) => {
-  const allTelemedLocations = await fhirClient.searchResources({
+  const allTelemedLocations: Location[] = await fhirClient.searchResources({
     resourceType: 'Location',
   });
   console.log('Received all locations from fhir.');

@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import { DateTime } from 'luxon';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ErrorDialog, PageForm, safelyCaptureException } from 'ottehr-components';
 import {

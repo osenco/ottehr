@@ -45,11 +45,11 @@ export const CallSettingsTooltip: FC<CallSettingsTooltipProps> = (props) => {
                   }}
                   noDivider
                 >
-                  <SettingsOutlinedIcon sx={{ color: otherColors.purple }} />
+                  <SettingsOutlinedIcon sx={{ color: otherColors.appointmentInfoBackground }} />
                 </StyledListItemWithButton>
               </List>
               <IconButton onClick={handleTooltipClose} size="small" sx={{ position: 'absolute', right: 0, top: 0 }}>
-                <CloseIcon fontSize="small" sx={{ color: otherColors.toolTipClose }} />
+                <CloseIcon fontSize="small" sx={{ color: otherColors.appointmentInfoBackground }} />
               </IconButton>
             </Box>
           }

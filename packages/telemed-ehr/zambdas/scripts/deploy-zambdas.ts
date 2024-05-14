@@ -2,7 +2,7 @@ import { FhirClient, ZambdaClient } from '@zapehr/sdk';
 import { Operation } from 'fast-json-patch';
 import { Subscription } from 'fhir/r4';
 import fs from 'fs';
-import devConfig from '../.env/dev.json';
+import devConfig from '../.env/development.json';
 // import testingConfig from '../.env/testing.json';
 import { getAuth0Token } from '../src/shared';
 
@@ -23,6 +23,15 @@ const ZAMBDAS: { [name: string]: DeployZambda } = {
     type: 'http_auth',
   },
   'CHANGE-TELEMED-APPOINTMENT-STATUS': {
+    type: 'http_auth',
+  },
+  'GET-CHART-DATA': {
+    type: 'http_auth',
+  },
+  'SAVE-CHART-DATA': {
+    type: 'http_auth',
+  },
+  'DELETE-CHART-DATA': {
     type: 'http_auth',
   },
   'GET-TOKEN-FOR-CONVERSATION': {
@@ -273,7 +282,7 @@ const main = async (): Promise<void> => {
   const env = process.argv[2];
 
   switch (env) {
-    case 'dev':
+    case 'development':
       await updateZambdas(devConfig);
       break;
     // case 'testing':

@@ -1,5 +1,4 @@
 import { Typography } from '@mui/material';
-import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PageForm } from 'ottehr-components';
 import { IntakeFlowPageRoute } from '../App';

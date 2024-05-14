@@ -3,7 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { Grid } from '@mui/material';
 import { DateTime } from 'luxon';
 import React, { ReactElement, memo, useMemo } from 'react';
-import { FieldValues, FormProvider, SubmitHandler, useForm } from 'react-hook-form';
+import { FieldValues, FormProvider, useForm } from 'react-hook-form';
 import {
   DATE_ERROR_MESSAGE,
   emailRegex,

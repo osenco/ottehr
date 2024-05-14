@@ -46,7 +46,7 @@ export const CallSideCard: FC = () => {
           hideText={!isCardExpanded}
           onClick={() => setManageParticipantsDialogOpen(true)}
         >
-          <ManageAccountsOutlinedIcon sx={{ color: otherColors.purple }} />
+          <ManageAccountsOutlinedIcon sx={{ color: otherColors.appointmentInfoBackground }} />
         </StyledListItemWithButton>
         <StyledListItemWithButton
           primaryText="Upload photos"
@@ -55,7 +55,7 @@ export const CallSideCard: FC = () => {
           hideText={!isCardExpanded}
           onClick={() => setUploadPhotosDialogOpen(true)}
         >
-          <PhotoLibraryOutlinedIcon sx={{ color: otherColors.purple }} />
+          <PhotoLibraryOutlinedIcon sx={{ color: otherColors.appointmentInfoBackground }} />
         </StyledListItemWithButton>
       </List>
 

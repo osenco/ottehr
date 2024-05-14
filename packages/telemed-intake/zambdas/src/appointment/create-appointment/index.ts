@@ -145,7 +145,7 @@ export async function createAppointment(
    * cause the "Estimated waiting time" calulations are based on this,
    * and we can't search appointments by "created" prop
    **/
-  let startTime = DateTime.utc().toISO();
+  let startTime: string | null = DateTime.utc().toISO();
   if (!startTime) {
     throw new Error('startTime is currently undefined');
   }
