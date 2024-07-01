@@ -8,7 +8,7 @@ const palette = {
     paper: '#FFFFFF',
   },
   primary: {
-    main: '#2169F5',
+    main: '#3B98BF',
     light: '#4AC0F2',
     dark: '#3B98BF',
     contrast: '#FFFFFF',
