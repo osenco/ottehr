@@ -29,6 +29,10 @@ export default function EditEmployeePage(): JSX.Element {
   // get the user id from the url
   const { id } = useParams();
 
+  //temporarily getting user first name and family name from profileResource, should invetigate why user.name is assigned to the email adress
+  const lastName = user?.profileResource?.name?.[0]?.family;
+  const firstName = user?.profileResource?.name?.[0]?.given?.[0];
+
   // const medallionLicensesMock: PractitionerLicense[] = [
   //   {
   //     state: 'CA',
@@ -126,7 +130,7 @@ export default function EditEmployeePage(): JSX.Element {
               marginTop={2}
               sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', fontWeight: '600 !important' }}
             >
-              {user?.name || <Skeleton width={250} />}
+              {firstName && lastName ? `${firstName} ${lastName}` : <Skeleton width={250} />}
               {isActive !== undefined && !isActive && (
                 <Chip label="Deactivated" color="error" size="small" sx={{ marginLeft: 3 }} />
               )}
