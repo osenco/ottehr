@@ -25,7 +25,7 @@ jobs:
       - name: Change directory
         run: cd packages/telemed-intake/zambdas/src
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
