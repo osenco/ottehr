@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Change directory
         run: cd packages/telemed-intake/zambdas/src
       - name: Install dependencies
