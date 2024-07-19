@@ -1,6 +1,6 @@
 {
   "name": "ottehr",
-  "version": 0.1,
+  "version": "0.1",
   "private": true,
   "scripts": {
     "test": "pnpm recursive run test",
