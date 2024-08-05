@@ -56,7 +56,7 @@ const Welcome = (): JSX.Element => {
 
   return (
     <CustomContainer
-      title={`Ottehr ${visitService}`}
+      title={`Ottehr Gilad ${visitService}`}
       subtitle={isFetching ? 'Loading...' : schedule?.name}
       img={clockFullColor}
       imgAlt="Clock icon"
