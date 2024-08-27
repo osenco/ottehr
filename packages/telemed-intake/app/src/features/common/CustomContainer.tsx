@@ -15,6 +15,6 @@ const imageForBackground = (page: string): string => {
 export const CustomContainer = CustomContainerFactory(
   imageForBackground,
   ottehrLogo,
-  'Ottehr Telemedicine',
+  'DermRX Telemedicine',
   <Footer />,
 );

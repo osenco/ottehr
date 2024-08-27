@@ -10,3 +10,6 @@ build
 # Ignoring npm lockfile because we are using pnpm
 package-lock.json
 .vercel
+
+# Local Netlify folder
+.netlify
