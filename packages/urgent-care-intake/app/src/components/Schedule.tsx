@@ -1,17 +1,18 @@
 import { Box, Button, Tab, Tabs, Typography, useMediaQuery, useTheme } from '@mui/material';
-import { DateTime } from 'luxon';
-import { FormEvent, ReactNode, SyntheticEvent, useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
-import { breakpoints, useZambdaClient, ControlButtons, ErrorDialog } from 'ottehr-components';
-import { IntakeFlowPageRoute } from '../App';
-import { otherColors } from '../IntakeThemeProvider';
-import zapehrApi from '../api/zapehrApi';
-import { SelectSlot } from '../components';
+import { ControlButtons, ErrorDialog, breakpoints, useZambdaClient } from 'ottehr-components';
 import { DATETIME_FULL_NO_YEAR, DATE_FULL_NO_YEAR, createLocalDateTime } from '../helpers';
-import { safelyCaptureException } from '../helpers/sentry';
+import { FormEvent, ReactNode, SyntheticEvent, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+
+import { DateTime } from 'luxon';
 import { IntakeDataContext } from '../store';
+import { IntakeFlowPageRoute } from '../App';
+import { SelectSlot } from '.';
+import { otherColors } from '../IntakeThemeProvider';
+import { safelyCaptureException } from '../helpers/sentry';
 import { updateAppointmentSlot } from '../store/IntakeActions';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import zapehrApi from '../api/zapehrApi';
 
 interface TabPanelProps {
   children?: ReactNode;

@@ -1,6 +1,7 @@
-import { createTheme, ThemeProvider } from '@mui/material';
-import { TypographyOptions } from '@mui/material/styles/createTypography';
+import { ThemeProvider, createTheme } from '@mui/material';
+
 import React from 'react';
+import { TypographyOptions } from '@mui/material/styles/createTypography';
 
 const palette = {
   background: {
@@ -8,8 +9,8 @@ const palette = {
     paper: '#FFFFFF',
   },
   primary: {
-    main: '#2169F5',
-    light: '#2169F5',
+    main: '#808080',
+    light: '#808080',
     dark: '##0A2143',
     contrast: '#FFFFFF',
   },
@@ -47,7 +48,7 @@ const palette = {
 
 export const otherColors = {
   appbarContrast: '#FFCD75',
-  headerBackground: '#15376a',
+  headerBackground: '#808080',
   blackTransparent: 'rgba(0, 0, 0, 0.5)',
   disabled: 'rgba(0,0,0,0.38)',
   tableRow: 'rgba(0,0,0,0.87)',

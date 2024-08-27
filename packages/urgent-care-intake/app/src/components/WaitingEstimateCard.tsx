@@ -1,6 +1,6 @@
-import CardWithDescription from '../components/CardWithDescription';
-import { clockFullColor } from '../assets/icons';
+import CardWithDescription from './CardWithDescription';
 import { Skeleton } from '@mui/material';
+import { clockFullColor } from '../assets/icons';
 import { otherColors } from '../IntakeThemeProvider';
 
 interface WaitingEstimateCardProps {
