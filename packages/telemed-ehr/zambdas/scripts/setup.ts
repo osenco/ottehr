@@ -1,11 +1,11 @@
+import { FhirClient } from '@zapehr/sdk';
+import { Organization } from 'fhir/r4';
 /* eslint-disable sort-keys */
 import fetch from 'node-fetch';
 import fs from 'fs';
+import { inviteUser } from './invite-user';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
-import { inviteUser } from './invite-user';
-import { FhirClient } from '@zapehr/sdk';
-import { Organization } from 'fhir/r4';
 
 async function createApplication(
   projectApiUrl: string,
@@ -181,7 +181,7 @@ export async function setupEHR(
     accessToken: accessToken,
   });
 
-  const applicationName = 'Starter EHR Application';
+  const applicationName = 'HaloHealth EHR';
   const [applicationId, clientId] = await createApplication(projectApiUrl, applicationName, accessToken, projectId);
   console.log(`Created application "${applicationName}".`);
   console.log(applicationId, clientId);

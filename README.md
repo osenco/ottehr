@@ -1,15 +1,15 @@
 <p align="center">
    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://assets-global.website-files.com/653fce065d76f84cf31488ae/6543bdda5daec299834a748e_otter%20logo%20white.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://assets-global.website-files.com/653fce065d76f84cf31488ae/65438838a5f9308ca9498887_otter%20logo%20dark.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://halo-intake.netlify.app/assets/halo-e7e9302d.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://halo-intake.netlify.app/assets/halo-e7e9302d.png">
       <img alt="Ottehr Logo.">
    </picture>
 </p>
 
-<p align="center">The production-ready, open-source EHR</p>
+<p align="center">HaloHealth Telemedicine</p>
 
 <p align="center">
-    <a href="https://www.ottehr.com/"><b>Ottehr.com</b></a>
+    <a href="https://halo-intake.netlify.app"><b>Website</b></a>
 </p>
 
 <div align="center">
