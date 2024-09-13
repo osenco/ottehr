@@ -1,1 +1,1 @@
-export { default as ottehrLogo } from './ottehrUcLogo.svg';
+export { default as ottehrLogo } from './halo.png';

@@ -9,8 +9,8 @@ const palette = {
     paper: '#FFFFFF',
   },
   primary: {
-    main: '#808080',
-    light: '#808080',
+    main: '#AAA',
+    light: '#EEE',
     dark: '##0A2143',
     contrast: '#FFFFFF',
   },
@@ -48,10 +48,10 @@ const palette = {
 
 export const otherColors = {
   appbarContrast: '#FFCD75',
-  headerBackground: '#808080',
+  headerBackground: '#244855',
   blackTransparent: 'rgba(0, 0, 0, 0.5)',
   disabled: 'rgba(0,0,0,0.38)',
-  tableRow: 'rgba(0,0,0,0.87)',
+  tableRow: '#00a652',
   consentBorder: 'rgba(77, 21, 183, 0.5)',
   ratingActive: '#FFB400',
   focusRingColor: '#005FCC',

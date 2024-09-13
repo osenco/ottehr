@@ -1,11 +1,12 @@
+import { IntakeThemeProviderBase, PropsWithChildren } from 'ottehr-components';
+
 import { FC } from 'react';
 import { createTheme } from '@mui/material';
-import { PropsWithChildren, IntakeThemeProviderBase } from 'ottehr-components';
 import i18n from './lib/i18n';
 
 export const otherColors = {
   appointmentInfoBackground: '#8F66EF',
-  appbarBackground: '#0A2143',
+  appbarBackground: '#244855',
   background: '#5324BE',
   borderGray: '#D6D8DF',
   borderLightBlue: '#4294F3',

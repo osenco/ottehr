@@ -1,11 +1,12 @@
+import { IntakeThemeProviderBase, PropsWithChildren } from 'ottehr-components';
+
 import { FC } from 'react';
 import { createTheme } from '@mui/material';
-import { PropsWithChildren, IntakeThemeProviderBase } from 'ottehr-components';
 import i18n from './lib/i18n';
 
 export const otherColors = {
   appointmentInfoBackground: '#8F66EF',
-  appbarBackground: '#0A2143',
+  appbarBackground: '#244855',
   background: '#5324BE',
   borderGray: '#D6D8DF',
   borderLightBlue: '#4294F3',
@@ -19,7 +20,7 @@ export const otherColors = {
   lightGreen: '#C1FBEA',
   purple: '#2169F5',
   brown: '#604203',
-  white: '#FFFFFF',
+  white: '#00a652',
   lightPurple: '#F5F2FF',
   languageIcon: 'rgba(15, 229, 189, 1)',
   lightGray: '#CED4DA',
@@ -51,7 +52,7 @@ export const palette = {
     cancelled: '#D91B1B',
   },
   primary: {
-    main: '#061B74',
+    main: '#00a652',
     contrast: '#FFFFFF',
   },
   secondary: {
@@ -84,7 +85,7 @@ export const palette = {
     focus: 'rgba(0, 0, 0, 0.12)',
   },
   background: {
-    default: '#15376A',
+    default: '#90AEAD',
     paper: '#FFFFFF',
     cancelled: '#FCBDBD',
   },

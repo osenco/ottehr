@@ -1,12 +1,10 @@
 import { AccountCircle, KeyboardArrowDown } from '@mui/icons-material';
-import { TabList } from '@mui/lab';
 import {
   AppBar,
   Box,
   Button,
   Container,
   Divider,
-  // IconButton,
   Menu,
   MenuItem,
   Skeleton,
@@ -15,14 +13,16 @@ import {
   Typography,
   useTheme,
 } from '@mui/material';
-import { MouseEvent, ReactElement, SyntheticEvent, useEffect, useMemo, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import logo from '../../assets/logo-4x.png';
-import useOttehrUser from '../../hooks/useOttehrUser';
 import { AppTab, useNavStore } from '../../state/nav.store';
-import { isLocalOrDevOrTestingOrTrainingEnv } from '../../telemed/utils/env.helper';
+import { Link, useLocation } from 'react-router-dom';
+import { MouseEvent, ReactElement, SyntheticEvent, useEffect, useMemo, useState } from 'react';
+
 import { RoleType } from '../../types/types';
+import { TabList } from '@mui/lab';
+import { isLocalOrDevOrTestingOrTrainingEnv } from '../../telemed/utils/env.helper';
+import logo from '../../assets/logo-4x.png';
 import { otherColors } from '../../CustomThemeProvider';
+import useOttehrUser from '../../hooks/useOttehrUser';
 
 const { VITE_APP_ORGANIZATION_NAME_SHORT: ORGANIZATION_NAME_SHORT } = import.meta.env;
 if (ORGANIZATION_NAME_SHORT == null) {
@@ -158,7 +158,7 @@ export default function Navbar(): ReactElement {
                     fontSize: 16,
                     fontWeight: 700,
                     textTransform: 'capitalize',
-                    color: '#FFFFFF',
+                    color: '#00a652',
                   }}
                 />
               ))}
