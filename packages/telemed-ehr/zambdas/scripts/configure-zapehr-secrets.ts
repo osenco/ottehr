@@ -1,7 +1,7 @@
-import devConfig from '../.env/dev.json';
+import { ZambdaClient } from '@zapehr/sdk';
+import devConfig from '../.env/development.json';
 // import testingConfig from '../.env/testing.json';
 import { getAuth0Token } from '../src/shared';
-import { ZambdaClient } from '@zapehr/sdk';
 
 const setupSecrets = async (config: any): Promise<void> => {
   const token = await getAuth0Token(config);
@@ -24,7 +24,9 @@ const setupSecrets = async (config: any): Promise<void> => {
       name: key,
       value: value,
     });
+
     console.log(`Create/update secret ${key} succeeded`);
+    
     await new Promise((resolve) => setTimeout(resolve, 500));
   }
 };
@@ -34,7 +36,7 @@ const main = async (): Promise<void> => {
   const env = process.argv[2];
 
   switch (env) {
-    case 'dev':
+    case 'development':
       await setupSecrets(devConfig);
       break;
     // case 'testing':
